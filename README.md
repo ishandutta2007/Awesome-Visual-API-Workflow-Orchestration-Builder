@@ -1,154 +1,153 @@
-# Awesome-Visual-API-Workflow-Orchestration-Builder
-
 # Awesome Visual API Workflow & Orchestration Builder
 
-> A curated list of top Visual API Workflow and Orchestration Builder platforms — both SaaS/Hosted commercial solutions and open-source alternatives for designing, automating, and orchestrating API-driven workflows with visual canvases.  
-> 🌟 Star this repo if you find it useful! 🌟
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+
+> A curated list of top **Visual API Workflow and Orchestration Builder** platforms — covering open-source self-hostable tools and commercial SaaS solutions for designing, automating, chaining, and orchestrating API-driven pipelines and agentic microservices with low-code visual canvases.
 
 ---
 
 ## 📋 Table of Contents
 
+- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Postman Flows](#postman-flows)
-  - [Zapier](#zapier)
-  - [Make](#make)
-  - [Tray.io](#trayio)
-  - [Workato](#workato)
-  - [Pipedream](#pipedream)
 - [Open-Source Software](#-open-source-software)
-  - [n8n](#n8n)
-  - [Activepieces](#activepieces)
-  - [Node-RED](#node-red)
-  - [Flowise](#flowise)
-  - [Windmill](#windmill)
-  - [Fluxify](#fluxify)
-  - [Open Flow](#open-flow)
-  - [napflow](#napflow)
-  - [MEL Agent](#mel-agent)
-- [Comparison at a Glance](#-comparison-at-a-glance)
+- [Feature Comparison Matrix](#-feature-comparison-matrix)
 - [Contributing](#-contributing)
+- [License](#-license)
+
+---
+
+## 📈 Sector Overview & Market Dynamics
+
+The integration platform and workflow orchestration market is valued between **$15B and $25B+** (with the broader iPaaS sector expanding toward **$70B–$100B+** at an aggressive CAGR of ~25–30%), driven by rapid API proliferation, distributed microservices, and autonomous AI agent workflows. The sector exhibits **moderate-to-high fragmentation** rather than a winner-take-all monopoly: while legacy mega-vendors and multi-billion-dollar enterprise platforms command high-ticket enterprise contracts, developer-centric low-code tools and open-source engines capture massive grassroots adoption through custom code extensibility, data privacy, and self-hosted deployments.
 
 ---
 
 ## 🟦 SaaS / Hosted Platforms
 
-Commercial, cloud-hosted Visual API Workflow and Orchestration Builder platforms. These are not open-source but are included as reference points for feature comparison.
+Commercial, cloud-hosted visual API workflow builders and iPaaS platforms, sorted by company valuation and annual recurring revenue (descending).
 
-### Postman Flows
-**Type:** API-centric visual workflow builder  
-Postman Flows provides a visual canvas for chaining API requests, transforming data, and orchestrating multi-step API workflows. It is tightly integrated with Postman collections and environments, making it a natural choice for teams already using Postman for API testing. The platform focuses on API request/response orchestration rather than general-purpose automation, with visual debugging and run logs.
-
-### Zapier
-**Type:** No-code automation with API connectivity  
-Zapier connects 7,000+ apps with trigger-action workflows, including Webhooks by Zapier for custom API calls. Multi-step Zaps support filters, formatters, and Paths for branching. While not purpose-built for complex API orchestration, it is widely used for lightweight API-driven automations without code.
-
-### Make
-**Type:** Visual automation with granular data control  
-Make's scenario builder shows data flowing between modules, with powerful data transformation, iteration, and error handling. Its HTTP module allows arbitrary API calls, and the visual canvas makes complex API workflows easier to reason about than linear automation tools. Pricing scales per operation, which can become expensive at volume.
-
-### Tray.io
-**Type:** Enterprise iPaaS with API orchestration  
-Tray.io provides a visual workflow canvas with 650+ connectors, JSONata data mapping, and a Connector SDK for custom API integrations. Its **Headless** offering allows building workflows from AI coding agents (Claude Code, Cursor, MCP clients) against the hosted platform, with everything opening in the visual builder [citation:12]. Features include callable workflows for reusable logic and Insights for health monitoring. Managed cloud only.
-
-### Workato
-**Type:** Enterprise automation with governance  
-Workato combines enterprise-grade security with a consumer-grade design interface, targeting both IT and business users. Recipes can orchestrate complex API-driven processes across cloud and on-premises systems, with cross-enterprise visibility for IT governance. The Connector SDK enables custom API integrations.
-
-### Pipedream
-**Type:** Developer-focused event source platform  
-Pipedream provides HTTP webhook triggers and API integrations with code-first Node.js/Python steps, built-in auth handling, and event history. Suited for developers wanting programmatic control over API workflows without a visual-only constraint. **Note:** Pipedream Workflows is closing, according to a 2026 report [citation:12].
+| Platform | Company Valuation / Revenue | Starting Tier Pricing | Free Tier / Trial Limits | Best For |
+|---|---|---|---|---|
+| **[Make](https://www.make.com/)** | **$13B** valuation *(parent Celonis)* / ~$52.6M ARR | **$9.00/month** (Core plan, billed annually) | **Free forever:** 1,000 credits/mo, 2 active scenarios, 15-min min scheduling interval, 512 MB data transfer | Complex multi-step API mapping & visual data transformations |
+| **[Workato](https://www.workato.com/)** | **$5.7B** valuation / ~$150M ARR | **$75.00/month** (Self-service Pro tier; Enterprise custom from $20k+/yr) | **Free evaluation tier:** One-time grant of 50,000 credits (no expiration, does not refresh monthly) | Enterprise-grade governance, IT security & cross-app automations |
+| **[Postman Flows](https://www.postman.com/product/flows/)** | **$5.6B** valuation / ~$313M ARR | **$9.00/user/month** (Solo plan billed annually; Team at $19/user/mo) | **Free forever:** 25 complimentary Flows credits/mo, up to 10 snapshots per flow, solo workspace (1 user) | Chaining REST/GraphQL APIs within existing Postman collections |
+| **[Zapier](https://zapier.com/)** | **$5.0B** valuation / ~$320M ARR | **$19.99/month** (Professional tier, billed annually) | **Free forever:** 100 tasks/mo, 2-step single-trigger/single-action Zaps only, 15-minute polling interval | Simple trigger-action integrations across 7,000+ commercial web apps |
+| **[Tray.io](https://tray.ai/)** | **$600M** valuation / ~$71M ARR | **$50.00/month** (Helix / Builder tier; Enterprise custom) | **30-day free trial:** Up to 1,000,000 tasks, full access to 600+ connectors, no credit card required | Enterprise iPaaS with low-code builder & Headless AI agent SDK |
+| **[Pipedream](https://pipedream.com/)** | **$80M** valuation *(acquired by Workday)* / ~$3.5M ARR | **$29.00/month** (Basic tier; Startup Connect at $99/mo) | **Free forever:** ~100 compute credits/mo, 3 active workflows, 750 seconds/day test runtime, community support | Developer-first serverless event workflows with Node.js & Python |
 
 ---
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven Visual API Workflow and Orchestration Builder tools. All listed projects offer source code you can deploy on your own infrastructure.
+Self-hosted, community-driven visual API workflow engines and orchestration builders. Listed in order of GitHub stars (descending).
 
-### n8n
-**Stack:** TypeScript / Node.js | **License:** Sustainable Use License (source-available, not OSI)  
-n8n is the most widely adopted source-available workflow automation platform, with a visual canvas and 500+ native integrations. Any API can be called via HTTP, and any agent via MCP. Workflows can mix visual building with custom code (JavaScript/Python) where needed. Key differentiators include full visibility into agent decisions, human-in-the-loop approval steps, and replay of past runs for debugging. **Important:** The license restricts certain commercial resale; self-hosting for internal use is permitted.
+### 1. [n8n](https://github.com/n8n-io/n8n) [![GitHub stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers)
+- **Stack:** TypeScript / Node.js | **License:** Sustainable Use License (source-available)
+- **Overview:** The most widely adopted source-available workflow automation platform, featuring a visual canvas, 500+ native integrations, and full AI/MCP agent orchestration. Any external API can be queried via standard HTTP nodes, and workflows seamlessly blend visual wiring with custom JavaScript and Python scripts. Features include real-time execution replays, human-in-the-loop approvals, and webhook triggers.
 
-### Activepieces
-**Stack:** TypeScript | **License:** MIT (Community Edition)  
-Activepieces is a genuinely MIT-licensed open-source automation platform positioned as a permissively licensed alternative to n8n [citation:5]. The Community Edition is free to self-host with a visual builder, AI-ready pieces, human-in-the-loop approval pieces, and 200+ integrations. Features include loops, branches, auto retries, HTTP, and code with NPM. Self-hosted and network-gapped for maximum security.  
-**Best for:** Teams wanting an MIT-licensed, self-hostable automation platform without the source-available restrictions of n8n.
+### 2. [Dify](https://github.com/langgenius/dify) [![GitHub stars](https://img.shields.io/github/stars/langgenius/dify?style=social&color=white)](https://github.com/langgenius/dify/stargazers)
+- **Stack:** Python / TypeScript / Next.js | **License:** Apache 2.0
+- **Overview:** An open-source LLM app development and agent orchestration platform with a visual drag-and-drop workflow canvas. Enables orchestrating complex multi-agent workflows, tool APIs, RAG pipelines, and model evaluation with production-grade backend deployment.
 
-### Node-RED
-**Stack:** Node.js | **License:** Apache 2.0  
-Node-RED is a long-running open-source flow editor under the OpenJS Foundation, with a large community and no vendor pricing [citation:12]. It is built for **event-driven automation, IoT, and workloads close to the hardware** — its node catalogue reflects event routing rather than business system integration. The project itself has no SSO, access control, or audit trail; those must be built or added via third-party support (e.g., FlowFuse) [citation:12].  
-**Best for:** IoT, edge computing, and event-driven data flows where visual wiring of devices and services is the priority.
+### 3. [Langflow](https://github.com/langflow-ai/langflow) [![GitHub stars](https://img.shields.io/github/stars/langflow-ai/langflow?style=social&color=white)](https://github.com/langflow-ai/langflow/stargazers)
+- **Stack:** Python / React | **License:** MIT
+- **Overview:** A dynamic visual framework and UI for building multi-agent AI systems, API chains, and retrieval-augmented generation (RAG) applications. Connects components, custom Python functions, and REST endpoints directly via interactive flowcharts.
 
-### Flowise
-**Stack:** TypeScript / Node.js | **License:** Apache 2.0 (Open Source)  
-Flowise is an open-source generative AI development platform for building AI Agents and LLM workflows with three visual builders: Assistant (beginner-friendly), Chatflow (single-agent systems), and Agentflow (multi-agent orchestration) [citation:6]. Connects to 100+ sources, tools, vector databases, and memories. Features include execution logs, visual debugging, self-hosted/air-gapped deployment, API/SDK/CLI access, and RBAC/SSO on enterprise tiers.  
-**Best for:** Teams building AI agent and LLM-powered workflows who want a visual builder specifically designed for generative AI orchestration.
+### 4. [Flowise](https://github.com/FlowiseAI/Flowise) [![GitHub stars](https://img.shields.io/github/stars/FlowiseAI/Flowise?style=social&color=white)](https://github.com/FlowiseAI/Flowise/stargazers)
+- **Stack:** TypeScript / Node.js | **License:** Apache 2.0
+- **Overview:** A visual canvas for building customized LLM orchestration flows and AI agents. Offers three specialized builders: Assistant (single-agent conversational), Chatflow (conversational chains), and Agentflow (multi-agent orchestration). Natively interfaces with 100+ API tools, vector stores, and custom webhooks.
 
-### Windmill
-**Stack:** Rust / Svelte / PostgreSQL | **License:** AGPL-3.0 (Community Edition)  
-Windmill is a code-first developer platform that turns scripts (Python, TypeScript, Go, Bash, SQL) into workflows, webhooks, and UIs. Every script auto-generates a UI form from its parameters, enabling rapid internal tool creation without frontend development. Flows can include an AI agent step that uses your scripts as tools, and an MCP server exposes scripts and flows to AI assistants [citation:12]. Claims 13x faster than Airflow for job execution.  
-**Best for:** Engineering teams that would rather write code than assemble nodes, while still wanting visual flow orchestration and auto-generated UIs.
+### 5. [Huginn](https://github.com/huginn/huginn) [![GitHub stars](https://img.shields.io/github/stars/huginn/huginn?style=social&color=white)](https://github.com/huginn/huginn/stargazers)
+- **Stack:** Ruby | **License:** MIT
+- **Overview:** A pioneer in self-hosted automated event-driven workflows. Allows users to create personal "agents" that monitor the web, scrape structured data from APIs, watch RSS feeds, and trigger outbound webhook actions on a visual event graph.
 
-### Fluxify
-**Stack:** Bun / TypeScript | **License:** Apache 2.0 (open-source core)  
-Fluxify is a production-grade, low-code agentic backend platform that turns a visual workflow into a **real, compiled API** . You draw the flow, and it is translated into JavaScript once when you save; requests run that code directly, with no graph walking. Supports databases, key-value stores, message queues, AI models, and observability integrations. Custom blocks are supported. Enterprise features are gated under a separate license .  
-**Best for:** Teams wanting the performance of compiled code with the convenience of a visual workflow builder, particularly for backend API orchestration.
+### 6. [Conductor](https://github.com/conductor-oss/conductor) [![GitHub stars](https://img.shields.io/github/stars/conductor-oss/conductor?style=social&color=white)](https://github.com/conductor-oss/conductor/stargazers)
+- **Stack:** Java / Spring Boot | **License:** Apache 2.0
+- **Overview:** An enterprise-scale, event-driven orchestration engine created at Netflix. Provides resilient microservice and API workflow execution, state tracking, and branching logic with visual topology rendering for distributed architectures.
 
-### Open Flow
-**Stack:** TypeScript / Node.js | **License:** Open Source (per repository)  
-Open Flow is an open-source workflow platform designed for **AI-assisted building with visual verification** [citation:2]. You can ask Codex, Claude Code, or another agent to build a Flow, open it in the Workbench, and refine it together. Combines JavaScript, connected apps, AI, branching, and human approval in one canvas. Features include explicit input sources, branches and reusable subflows, LLM/Agent tasks with approval policies, and versioned publishing. Connects apps via OpenConnector without putting credentials in the graph. Self-hosted via Docker or Fly.io [citation:2].  
-**Best for:** Teams wanting AI agents to help build workflows while keeping every step visible, inspectable, and version-controlled.
+### 7. [Kestra](https://github.com/kestra-io/kestra) [![GitHub stars](https://img.shields.io/github/stars/kestra-io/kestra?style=social&color=white)](https://github.com/kestra-io/kestra/stargazers)
+- **Stack:** Java / Vue.js | **License:** Apache 2.0
+- **Overview:** An event-driven, declarative workflow orchestrator that treats workflows as code (YAML) while offering a visual topology designer, real-time debugging, and hundreds of plugins for cloud APIs, databases, and microservices.
 
-### napflow
-**Stack:** Python / YAML | **License:** Open Source (per PyPI)  
-napflow is a local-first, git-friendly, node-based flow editor and engine for **API request/response processing** — explicitly positioned as "Postman Flows, but open, file-based, Python-powered, and composable" [citation:4]. A flow is one YAML file + one `nodes.py` in one folder, making diffs small and reviewable. Features include headless `napf run` with assert-driven exit codes for CI, full observability (headers, bodies, timing, retries), and a visual canvas. Flows are composable: any flow is usable as a node inside another flow. Python-native logic testable with pytest. **Status:** v0.2 developer preview; formats experimental before v1.0 [citation:4].  
-**Best for:** QA and dev teams testing APIs who want their flows reviewed, diffed, and run in CI like any other code.
+### 8. [Activepieces](https://github.com/activepieces/activepieces) [![GitHub stars](https://img.shields.io/github/stars/activepieces/activepieces?style=social&color=white)](https://github.com/activepieces/activepieces/stargazers)
+- **Stack:** TypeScript | **License:** MIT (Community Edition)
+- **Overview:** A 100% MIT-licensed open-source automation platform serving as a permissive alternative to n8n. Features 200+ native "pieces", looping, branching, custom NPM code execution, auto-retries, human approvals, and air-gapped deployment support.
 
-### MEL Agent
-**Stack:** Go / React / PostgreSQL | **License:** Open Source (per package)  
-MEL Agent is an AI-first workflow automation platform with a visual builder inspired by n8n, Make.com, and Node-RED [citation:3]. Built from the ground up for LLM orchestration and AI agent workflows. Features include real-time debugging with step-by-step execution traces, live data preview for every node, AI nodes (LLM chat, embeddings), integration nodes (Slack, Baserow, webhooks, HTTP), logic nodes, and a dual worker model (embedded + distributed). API-first design with everything available via REST API. Docker Compose deployment [citation:3].  
-**Best for:** Teams building AI-powered workflows who want a visual builder designed for LLM orchestration rather than retrofitted automation.
+### 9. [Node-RED](https://github.com/node-red/node-red) [![GitHub stars](https://img.shields.io/github/stars/node-red/node-red?style=social&color=white)](https://github.com/node-red/node-red/stargazers)
+- **Stack:** Node.js / JavaScript | **License:** Apache 2.0
+- **Overview:** An established open-source low-code flow editor governed by the OpenJS Foundation. Built specifically for event-driven automation, hardware devices, IoT, and edge-computing message routing across MQTT, WebSocket, and HTTP endpoints.
+
+### 10. [Windmill](https://github.com/windmill-labs/windmill) [![GitHub stars](https://img.shields.io/github/stars/windmill-labs/windmill?style=social&color=white)](https://github.com/windmill-labs/windmill/stargazers)
+- **Stack:** Rust / Svelte / PostgreSQL | **License:** AGPL-3.0 (Community Edition)
+- **Overview:** A high-performance, code-first developer platform that converts scripts (Python, TypeScript, Go, Bash, SQL) into visual workflows, auto-generated UI forms, and webhooks. Built with a Rust execution engine claiming 13x faster throughput than Airflow.
+
+### 11. [Automatisch](https://github.com/automatisch/automatisch) [![GitHub stars](https://img.shields.io/github/stars/automatisch/automatisch?style=social&color=white)](https://github.com/automatisch/automatisch/stargazers)
+- **Stack:** JavaScript / React / Node.js | **License:** AGPL-3.0
+- **Overview:** A privacy-conscious, self-hosted Zapier alternative for teams subject to strict GDPR or internal data compliance regulations, allowing visual trigger-action integrations without sending sensitive payload data to external cloud services.
+
+### 12. [Open Flow](https://github.com/oomol-lab/open-flow) [![GitHub stars](https://img.shields.io/github/stars/oomol-lab/open-flow?style=social&color=white)](https://github.com/oomol-lab/open-flow/stargazers)
+- **Stack:** TypeScript / Node.js | **License:** Open Source
+- **Overview:** A visual workflow platform built for AI-assisted orchestration with inspectable code verification. Integrates with OpenConnector to communicate with external APIs securely without exposing credentials inside canvas graphs.
+
+### 13. [Fluxify](https://github.com/Fluxify-rest/Fluxify) [![GitHub stars](https://img.shields.io/github/stars/Fluxify-rest/Fluxify?style=social&color=white)](https://github.com/Fluxify-rest/Fluxify/stargazers)
+- **Stack:** Bun / TypeScript | **License:** Apache 2.0
+- **Overview:** A low-code agentic backend platform that compiles visual workflows directly into native JavaScript executed on the high-speed Bun runtime, eliminating runtime graph-walking latency for API endpoints.
+
+### 14. [MEL Agent](https://github.com/cedricziel/mel-agent) [![GitHub stars](https://img.shields.io/github/stars/cedricziel/mel-agent?style=social&color=white)](https://github.com/cedricziel/mel-agent/stargazers)
+- **Stack:** Go / React / PostgreSQL | **License:** Open Source
+- **Overview:** An AI-native workflow automation platform with dual worker execution (embedded and distributed) designed specifically for LLM step traces, live preview debugging, and HTTP webhook integration.
+
+### 15. [napflow](https://github.com/nickosh/napflow) [![GitHub stars](https://img.shields.io/github/stars/nickosh/napflow?style=social&color=white)](https://github.com/nickosh/napflow/stargazers)
+- **Stack:** Python / YAML | **License:** Open Source
+- **Overview:** A local-first, git-friendly, node-based flow editor built as an open, Python-powered alternative to Postman Flows. Stores workflows as simple YAML and Python files for version control, composability, and headless CI execution.
 
 ---
 
-## 📊 Comparison at a Glance
+## 📊 Feature Comparison Matrix
 
-| Software | License | Type | Visual Canvas | Code Support | Self-Hosted | Best For |
-|----------|---------|------|---------------|--------------|-------------|----------|
-| **Postman Flows** | Proprietary | API workflow builder | ✅ | Limited | ❌ | Postman ecosystem |
-| **Zapier** | Proprietary | No-code automation | ✅ | Limited | ❌ | Broadest app coverage |
-| **Make** | Proprietary | Visual automation | ✅ | Limited | ❌ | Granular data shaping |
-| **Tray.io** | Proprietary | Enterprise iPaaS | ✅ | JSONata | ❌ | Governed enterprise automation |
-| **Workato** | Proprietary | Enterprise automation | ✅ | SDK | ❌ | Citizen integrators |
-| **n8n** | Sustainable Use | Source-available automation | ✅ | JS/Python | ✅ | Powerful self-hosted + AI |
-| **Activepieces** | MIT | Open-source automation | ✅ | NPM | ✅ | MIT-licensed self-hosted |
-| **Node-RED** | Apache 2.0 | Event-driven flows | ✅ | JS | ✅ | IoT + edge automation |
-| **Flowise** | Apache 2.0 | AI/LLM workflows | ✅ | Custom code | ✅ | AI agent orchestration |
-| **Windmill** | AGPL-3.0 | Code-first platform | ✅ | Python/TS/Go | ✅ | Scripts-to-workflow |
-| **Fluxify** | Apache 2.0 (core) | Compiled API workflows | ✅ | JS (compiled) | ✅ | Performance + visual builder |
-| **Open Flow** | Open Source | AI-assisted workflows | ✅ | TypeScript | ✅ | Agent-built + inspectable |
-| **napflow** | Open Source | API request/response flows | ✅ | Python | ✅ | Git-friendly API testing |
-| **MEL Agent** | Open Source | AI-native workflows | ✅ | Go SDK | ✅ | LLM orchestration |
+| Platform | Deployment | License | Visual Canvas | Code Extensibility | AI / MCP Ready | Primary Target Use Case |
+|---|---|---|---|---|---|---|
+| **Make** | Cloud SaaS | Proprietary | ✅ | JSONata / Formulas | ✅ | Enterprise visual data integration |
+| **Workato** | Cloud SaaS | Proprietary | ✅ | Connector SDK | ✅ | Enterprise iPaaS & governed IT automation |
+| **Postman Flows** | Cloud SaaS | Proprietary | ✅ | JavaScript | ✅ | API debugging & collection chaining |
+| **Zapier** | Cloud SaaS | Proprietary | ✅ | Code by Zapier (limited) | ✅ | No-code app integration |
+| **Tray.io** | Cloud SaaS | Proprietary | ✅ | Headless SDK / Code | ✅ | Scalable multi-tenant iPaaS |
+| **Pipedream** | Cloud SaaS | Proprietary | ✅ | Node.js / Python | ✅ | Serverless event triggers & webhooks |
+| **n8n** | Self-Hosted / Cloud | Sustainable Use | ✅ | JavaScript / Python | ✅ | Versatile self-hosted workflow automation |
+| **Dify** | Self-Hosted / Cloud | Apache 2.0 | ✅ | Python / REST | ✅ | LLM agent workflows & RAG pipelines |
+| **Langflow** | Self-Hosted / Cloud | MIT | ✅ | Python | ✅ | Visual multi-agent & prompt engineering |
+| **Flowise** | Self-Hosted / Cloud | Apache 2.0 | ✅ | JavaScript / Custom Code | ✅ | Drag-and-drop LLM agent flows |
+| **Huginn** | Self-Hosted | MIT | ✅ | Ruby / Shell | ⚠️ | Event monitoring & web scraping |
+| **Conductor** | Self-Hosted / Cloud | Apache 2.0 | ✅ | Polyglot (Java, Python, Go) | ✅ | Resilient microservice API orchestration |
+| **Kestra** | Self-Hosted / Cloud | Apache 2.0 | ✅ | Python, Shell, Node, SQL | ✅ | Declarative orchestration & data pipelines |
+| **Activepieces** | Self-Hosted / Cloud | MIT | ✅ | NPM / TypeScript | ✅ | Permissively licensed Zapier alternative |
+| **Node-RED** | Self-Hosted | Apache 2.0 | ✅ | JavaScript | ⚠️ | IoT, hardware & edge event wiring |
+| **Windmill** | Self-Hosted / Cloud | AGPL-3.0 | ✅ | Python / TS / Go / Bash | ✅ | Code-first developer script automation |
+| **Automatisch** | Self-Hosted | AGPL-3.0 | ✅ | JavaScript | ⚠️ | Privacy-focused self-hosted automation |
+| **Open Flow** | Self-Hosted | Open Source | ✅ | TypeScript | ✅ | AI-assisted inspectable workflow creation |
+| **Fluxify** | Self-Hosted | Apache 2.0 | ✅ | JavaScript (Bun compiled) | ✅ | High-throughput compiled API pipelines |
+| **MEL Agent** | Self-Hosted | Open Source | ✅ | Go SDK | ✅ | AI-native step tracing & LLM flows |
+| **napflow** | Self-Hosted / Local | Open Source | ✅ | Python | ⚠️ | Git-friendly API testing in CI/CD |
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Visual API Workflow or Orchestration Builder that should be listed here, please open a pull request with:
+Contributions are welcome! If you know of an open-source or notable Visual API Workflow and Orchestration platform that should be included:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source (or clearly note the license if source-available but not OSI-approved, as with n8n).
+1. Fork this repository.
+2. Add your entry under the appropriate section in descending order (by star count for open-source or revenue/valuation for SaaS).
+3. Ensure the project is active (updated within the last 12 months) and relevant to visual API orchestration.
+4. Submit a Pull Request with a clear description of the project and its license.
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+This repository and curated list are released under the [Creative Commons Zero v1.0 Universal](LICENSE) (CC0 1.0) Public Domain Dedication. Listed third-party products, trademarks, and repositories remain the property and copyright of their respective owners.
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+⭐ **Found this guide helpful? Give it a star on GitHub!** ⭐
