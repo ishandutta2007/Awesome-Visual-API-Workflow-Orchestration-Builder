@@ -8,7 +8,7 @@
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
   <a href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Visual-API-Workflow-Orchestration-Builder/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Visual-API-Workflow-Orchestration-Builder?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Visual-API-Workflow-Orchestration-Builder/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Visual-API-Workflow-Orchestration-Builder?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
@@ -52,65 +52,65 @@ Commercial, cloud-hosted visual API workflow builders and iPaaS platforms, sorte
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven visual API workflow engines and orchestration builders. Listed in order of GitHub stars (descending). 💻🔓
+Self-hosted, community-driven visual API workflow engines and orchestration builders. Listed in order of GitHub_Stars (descending). 💻🔓
 
-### 1. [n8n](https://github.com/n8n-io/n8n) [![GitHub stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers) 🌟
+### 1. [n8n](https://github.com/n8n-io/n8n) [![GitHub_Stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers) 🌟
 - **Stack:** TypeScript / Node.js | **License:** Sustainable Use License (source-available)
 - **Overview:** The most widely adopted source-available workflow automation platform, featuring a visual canvas, 500+ native integrations, and full AI/MCP agent orchestration. Any external API can be queried via standard HTTP nodes, and workflows seamlessly blend visual wiring with custom JavaScript and Python scripts. Features include real-time execution replays, human-in-the-loop approvals, and webhook triggers. 🔀
 
-### 2. [Dify](https://github.com/langgenius/dify) [![GitHub stars](https://img.shields.io/github/stars/langgenius/dify?style=social&color=white)](https://github.com/langgenius/dify/stargazers) 🤖
+### 2. [Dify](https://github.com/langgenius/dify) [![GitHub_Stars](https://img.shields.io/github/stars/langgenius/dify?style=social&color=white)](https://github.com/langgenius/dify/stargazers) 🤖
 - **Stack:** Python / TypeScript / Next.js | **License:** Apache 2.0
 - **Overview:** An open-source LLM app development and agent orchestration platform with a visual drag-and-drop workflow canvas. Enables orchestrating complex multi-agent workflows, tool APIs, RAG pipelines, and model evaluation with production-grade backend deployment. 🧠
 
-### 3. [Langflow](https://github.com/langflow-ai/langflow) [![GitHub stars](https://img.shields.io/github/stars/langflow-ai/langflow?style=social&color=white)](https://github.com/langflow-ai/langflow/stargazers) 🌊
+### 3. [Langflow](https://github.com/langflow-ai/langflow) [![GitHub_Stars](https://img.shields.io/github/stars/langflow-ai/langflow?style=social&color=white)](https://github.com/langflow-ai/langflow/stargazers) 🌊
 - **Stack:** Python / React | **License:** MIT
 - **Overview:** A dynamic visual framework and UI for building multi-agent AI systems, API chains, and retrieval-augmented generation (RAG) applications. Connects components, custom Python functions, and REST endpoints directly via interactive flowcharts. 💬
 
-### 4. [Flowise](https://github.com/FlowiseAI/Flowise) [![GitHub stars](https://img.shields.io/github/stars/FlowiseAI/Flowise?style=social&color=white)](https://github.com/FlowiseAI/Flowise/stargazers) 🧭
+### 4. [Flowise](https://github.com/FlowiseAI/Flowise) [![GitHub_Stars](https://img.shields.io/github/stars/FlowiseAI/Flowise?style=social&color=white)](https://github.com/FlowiseAI/Flowise/stargazers) 🧭
 - **Stack:** TypeScript / Node.js | **License:** Apache 2.0
 - **Overview:** A visual canvas for building customized LLM orchestration flows and AI agents. Offers three specialized builders: Assistant (single-agent conversational), Chatflow (conversational chains), and Agentflow (multi-agent orchestration). Natively interfaces with 100+ API tools, vector stores, and custom webhooks. 🔗
 
-### 5. [Huginn](https://github.com/huginn/huginn) [![GitHub stars](https://img.shields.io/github/stars/huginn/huginn?style=social&color=white)](https://github.com/huginn/huginn/stargazers) 🦅
+### 5. [Huginn](https://github.com/huginn/huginn) [![GitHub_Stars](https://img.shields.io/github/stars/huginn/huginn?style=social&color=white)](https://github.com/huginn/huginn/stargazers) 🦅
 - **Stack:** Ruby | **License:** MIT
 - **Overview:** A pioneer in self-hosted automated event-driven workflows. Allows users to create personal "agents" that monitor the web, scrape structured data from APIs, watch RSS feeds, and trigger outbound webhook actions on a visual event graph. 📡
 
-### 6. [Conductor](https://github.com/conductor-oss/conductor) [![GitHub stars](https://img.shields.io/github/stars/conductor-oss/conductor?style=social&color=white)](https://github.com/conductor-oss/conductor/stargazers) 🎼
+### 6. [Conductor](https://github.com/conductor-oss/conductor) [![GitHub_Stars](https://img.shields.io/github/stars/conductor-oss/conductor?style=social&color=white)](https://github.com/conductor-oss/conductor/stargazers) 🎼
 - **Stack:** Java / Spring Boot | **License:** Apache 2.0
 - **Overview:** An enterprise-scale, event-driven orchestration engine created at Netflix. Provides resilient microservice and API workflow execution, state tracking, and branching logic with visual topology rendering for distributed architectures. 🏗️
 
-### 7. [Kestra](https://github.com/kestra-io/kestra) [![GitHub stars](https://img.shields.io/github/stars/kestra-io/kestra?style=social&color=white)](https://github.com/kestra-io/kestra/stargazers) 🚀
+### 7. [Kestra](https://github.com/kestra-io/kestra) [![GitHub_Stars](https://img.shields.io/github/stars/kestra-io/kestra?style=social&color=white)](https://github.com/kestra-io/kestra/stargazers) 🚀
 - **Stack:** Java / Vue.js | **License:** Apache 2.0
 - **Overview:** An event-driven, declarative workflow orchestrator that treats workflows as code (YAML) while offering a visual topology designer, real-time debugging, and hundreds of plugins for cloud APIs, databases, and microservices. 📑
 
-### 8. [Activepieces](https://github.com/activepieces/activepieces) [![GitHub stars](https://img.shields.io/github/stars/activepieces/activepieces?style=social&color=white)](https://github.com/activepieces/activepieces/stargazers) 🧩
+### 8. [Activepieces](https://github.com/activepieces/activepieces) [![GitHub_Stars](https://img.shields.io/github/stars/activepieces/activepieces?style=social&color=white)](https://github.com/activepieces/activepieces/stargazers) 🧩
 - **Stack:** TypeScript | **License:** MIT (Community Edition)
 - **Overview:** A 100% MIT-licensed open-source automation platform serving as a permissive alternative to n8n. Features 200+ native "pieces", looping, branching, custom NPM code execution, auto-retries, human approvals, and air-gapped deployment support. 🛡️
 
-### 9. [Node-RED](https://github.com/node-red/node-red) [![GitHub stars](https://img.shields.io/github/stars/node-red/node-red?style=social&color=white)](https://github.com/node-red/node-red/stargazers) 🔴
+### 9. [Node-RED](https://github.com/node-red/node-red) [![GitHub_Stars](https://img.shields.io/github/stars/node-red/node-red?style=social&color=white)](https://github.com/node-red/node-red/stargazers) 🔴
 - **Stack:** Node.js / JavaScript | **License:** Apache 2.0
 - **Overview:** An established open-source low-code flow editor governed by the OpenJS Foundation. Built specifically for event-driven automation, hardware devices, IoT, and edge-computing message routing across MQTT, WebSocket, and HTTP endpoints. 🌐
 
-### 10. [Windmill](https://github.com/windmill-labs/windmill) [![GitHub stars](https://img.shields.io/github/stars/windmill-labs/windmill?style=social&color=white)](https://github.com/windmill-labs/windmill/stargazers) 💨
+### 10. [Windmill](https://github.com/windmill-labs/windmill) [![GitHub_Stars](https://img.shields.io/github/stars/windmill-labs/windmill?style=social&color=white)](https://github.com/windmill-labs/windmill/stargazers) 💨
 - **Stack:** Rust / Svelte / PostgreSQL | **License:** AGPL-3.0 (Community Edition)
 - **Overview:** A high-performance, code-first developer platform that converts scripts (Python, TypeScript, Go, Bash, SQL) into visual workflows, auto-generated UI forms, and webhooks. Built with a Rust execution engine claiming 13x faster throughput than Airflow. ⚡
 
-### 11. [Automatisch](https://github.com/automatisch/automatisch) [![GitHub stars](https://img.shields.io/github/stars/automatisch/automatisch?style=social&color=white)](https://github.com/automatisch/automatisch/stargazers) ⚙️
+### 11. [Automatisch](https://github.com/automatisch/automatisch) [![GitHub_Stars](https://img.shields.io/github/stars/automatisch/automatisch?style=social&color=white)](https://github.com/automatisch/automatisch/stargazers) ⚙️
 - **Stack:** JavaScript / React / Node.js | **License:** AGPL-3.0
 - **Overview:** A privacy-conscious, self-hosted Zapier alternative for teams subject to strict GDPR or internal data compliance regulations, allowing visual trigger-action integrations without sending sensitive payload data to external cloud services. 🔒
 
-### 12. [Open Flow](https://github.com/oomol-lab/open-flow) [![GitHub stars](https://img.shields.io/github/stars/oomol-lab/open-flow?style=social&color=white)](https://github.com/oomol-lab/open-flow/stargazers) 💡
+### 12. [Open Flow](https://github.com/oomol-lab/open-flow) [![GitHub_Stars](https://img.shields.io/github/stars/oomol-lab/open-flow?style=social&color=white)](https://github.com/oomol-lab/open-flow/stargazers) 💡
 - **Stack:** TypeScript / Node.js | **License:** Open Source
 - **Overview:** A visual workflow platform built for AI-assisted orchestration with inspectable code verification. Integrates with OpenConnector to communicate with external APIs securely without exposing credentials inside canvas graphs. 🔍
 
-### 13. [Fluxify](https://github.com/Fluxify-rest/Fluxify) [![GitHub stars](https://img.shields.io/github/stars/Fluxify-rest/Fluxify?style=social&color=white)](https://github.com/Fluxify-rest/Fluxify/stargazers) ⚡
+### 13. [Fluxify](https://github.com/Fluxify-rest/Fluxify) [![GitHub_Stars](https://img.shields.io/github/stars/Fluxify-rest/Fluxify?style=social&color=white)](https://github.com/Fluxify-rest/Fluxify/stargazers) ⚡
 - **Stack:** Bun / TypeScript | **License:** Apache 2.0
 - **Overview:** A low-code agentic backend platform that compiles visual workflows directly into native JavaScript executed on the high-speed Bun runtime, eliminating runtime graph-walking latency for API endpoints. 🏎️
 
-### 14. [MEL Agent](https://github.com/cedricziel/mel-agent) [![GitHub stars](https://img.shields.io/github/stars/cedricziel/mel-agent?style=social&color=white)](https://github.com/cedricziel/mel-agent/stargazers) 🧪
+### 14. [MEL Agent](https://github.com/cedricziel/mel-agent) [![GitHub_Stars](https://img.shields.io/github/stars/cedricziel/mel-agent?style=social&color=white)](https://github.com/cedricziel/mel-agent/stargazers) 🧪
 - **Stack:** Go / React / PostgreSQL | **License:** Open Source
 - **Overview:** An AI-native workflow automation platform with dual worker execution (embedded and distributed) designed specifically for LLM step traces, live preview debugging, and HTTP webhook integration. 🔬
 
-### 15. [napflow](https://github.com/nickosh/napflow) [![GitHub stars](https://img.shields.io/github/stars/nickosh/napflow?style=social&color=white)](https://github.com/nickosh/napflow/stargazers) 💤
+### 15. [napflow](https://github.com/nickosh/napflow) [![GitHub_Stars](https://img.shields.io/github/stars/nickosh/napflow?style=social&color=white)](https://github.com/nickosh/napflow/stargazers) 💤
 - **Stack:** Python / YAML | **License:** Open Source
 - **Overview:** A local-first, git-friendly, node-based flow editor built as an open, Python-powered alternative to Postman Flows. Stores workflows as simple YAML and Python files for version control, composability, and headless CI execution. 🐍
 
@@ -149,7 +149,7 @@ Self-hosted, community-driven visual API workflow engines and orchestration buil
 Contributions are welcome! If you know of an open-source or notable Visual API Workflow and Orchestration platform that should be included:
 
 1. Fork this repository 🍴.
-2. Add your entry under the appropriate section in descending order (by star count for open-source or revenue/valuation for SaaS) 📊.
+2. Add your entry under the appropriate section in descending order (by Stars_Count for open-source or revenue/valuation for SaaS) 📊.
 3. Ensure the project is active (updated within the last 12 months) and relevant to visual API orchestration 🎯.
 4. Submit a Pull Request with a clear description of the project and its license 🚀.
 
